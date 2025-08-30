@@ -1,0 +1,75 @@
+:root {
+    --header-color: #03a9a9;
+    --secondary-header-color: #137979;
+    --highlight-color: #afd700;
+}
+
+body {
+    background-color: #1c1c1c;
+    color: #d0d0d0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.ascii {
+    color: var(--header-color);
+    font-weight: bold;
+    white-space: pre;
+    font-family: monospace;
+}
+
+.ascii::before {
+    color: var(--secondary-header-color);
+    content: "$ figlet -f slant\a";
+    font-weight: normal;
+    width: 100%;
+}
+
+.ls {
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-flow: row;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.ls::before {
+    content: "$ ls\a";
+    width: 100%;
+    color: var(--secondary-header-color);
+}
+
+.ls li {
+    padding: 0.2em;
+    list-style: none;
+}
+
+a {
+    color: var(--header-color);
+}
+
+a:hover {
+    color: var(--highlight-color);
+}
+
+h1, h2 {
+    color: var(--header-color);
+}
+
+command {
+    color: var(--secondary-header-color);
+    font-family: monospace;
+}
+
+result {
+    display: block;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin: 0.25em;
+    border: 1px var(--header-color) solid;
+}
