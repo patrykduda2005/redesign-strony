@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="pl-pl">
     <head>
-        <link rel="stylesheet" href="index.css">
         <meta charset="UTF-8">
-        <script src="./nav.js" type="module" async blocking="render" fetchpriority="high">
+        <script type="module" async blocking="render" fetchpriority="high">
+            const nav_promise = fetch("./nav.html").then((f) => {return f.text()})
+            const nav_elem = document.getElementById("nav")
+            nav_promise.then((v) => nav_elem.innerHTML = v)
         </script>
+        <link rel="stylesheet" href="index.css" defer>
     </head>
     <body>
         <noscript>
