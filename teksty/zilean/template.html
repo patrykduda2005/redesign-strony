@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl-pl">
+    <head>
+        <title><++> | Paut's</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="module" async blocking="render" fetchpriority="high">
+            const nav_promise = fetch("/nav/nav.html").then((f) => {return f.text()})
+            const nav_elem = document.getElementById("nav_anchor")
+            nav_promise.then((v) => nav_elem.innerHTML = v)
+        </script>
+        <link rel="stylesheet" href="/style/index.css" defer>
+        <link rel="stylesheet" href="/nav/nav.css" defer>
+    </head>
+    <body>
+        <noscript>
+            <a href="/nav/nav.html" style="text-align: center;">Navigacja</a>
+        </noscript>
+        <div id="nav_anchor"></div>
+        <main>
+            <++>
+        </main>
+    </body>
+</html>

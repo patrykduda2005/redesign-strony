@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl-pl">
+    <head>
+        <title><++> | Paut's</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="module" async blocking="render" fetchpriority="high">
+            const nav_promise = fetch("/nav/nav.html").then((f) => {return f.text()})
+            const nav_elem = document.getElementById("nav_anchor")
+            nav_promise.then((v) => nav_elem.innerHTML = v)
+        </script>
+        <link rel="stylesheet" href="/style/index.css" defer>
+        <link rel="stylesheet" href="/nav/nav.css" defer>
+    </head>
+    <body>
+        <noscript>
+            <a href="/nav/nav.html" style="text-align: center;">Navigacja</a>
+        </noscript>
+        <div id="nav_anchor"></div>
+        <main>
+            <p>
+                Superior, Bronze player, zilean, support, early season 14, opinion.<br>
+                Zamysł tego zestawu jest taki, aby ult leczył jak najwięcej i przy okazji inne rzeczy tu są.
+                <div class="feh" style="width: 25%; float: right;">
+                    Brat_sie_myli
+                    <img src="ksawi.png">
+                </div>
+            </p>
+            <ol type="I">
+               <h2><li>BUILD</li></h2>
+                <img src="itemy.png">
+                <p><ul>
+                    <li>Sanki albo ten co daje redukcje obrażeń trzeba wziac, bo daje <span class="highlight">przeżywalność</span></li>
+                    <li>Redemption daje nam dużo ability haste'a (zilean lubi dużo tego <span class="highlight">AH</span>) i najwięcej heal & shield powera, ktory wiadomo jest pod ulta. <span style="color: var(--header-color);">Aktywka też dużo leczy.</span></li>
+                    <li>Butki <span class="highlight">AH</span>, bo zilean lubi tego dużo (co najmniej 50, a najlepiej 100).</li>
+                    <li>Moonstone renever, bo jego pasywa daje <span class="highlight">40% z heala na innego typa</span>, więc jak kogoś revasz to inny też troche tego hp dostaje.</li>
+                    <li>Helia zwieksza <span class="highlight">każdy heal o ilość stacków</span>, które sie dostaje za zadawawnie obrażeń przeciwnikowi.
+                        Ale jak to wykorzystamy jak ult zileana healuje tylko raz na jakis czas?
+                        Przedstawiam <span class="highlight">Font of Life</span>!
+                    </li>
+                </ul></p>
+                <h2><li>FONT OF LIFE</li></h2>
+                <div class="feh" style="float: left; width: 50%;">
+                    <img src="fontoflife.png">
+                </div>
+                <p style="padding: 5em;">
+                    Font of Life healuje kazdego sojusznika, który zautoatakuje tego samego przeciwnika co ty <span class="highlight">spowolniłeś</span> lub unieruchomiłeś.
+                    Dzięki czemu zilean ma dostęp do szybkiego i łatwego <span class="highlight">heal'a</span> na proc'owanie różnych rzeczy.
+                </p>
+                <h2 style="clear: both;"><li>RUNY</li></h2>
+                <div class="img" style="float: left;">
+                    <img src="runy.png">
+                </div>
+                <p>
+                    <ul style="padding: 5em;">
+                        <li>GUARDIAN, kurde guardian daje ci taką <span class="highlight">tankowność</span>, że mozesz sobie chodzić tak o bo tak</li>
+                        <li>BONE PLATING w odpowiedniej sytuacji daje ci OGROMNĄ <span class="highlight">tankowność</span>. OCZYWISCIE BIERZESZ SECOND WIND GDY TRZEBA, TA?</li>
+                        <li>Revitalize daje heal & shield powera na heale</li>
+                        <li>Presence of Mind upoważnia cie do rzucania <span class="highlight">podwojnych bomb do poke'owania</span></li>
+                        <li><span class="highlight">Tenacity</span> jest spoko</li>
+                        <li><span class="highlight">AH</span> (zilean to lubi)</li>
+                        <li>Jakies randomowe runki pozniej ale <span class="highlight">tenacity</span> jest spoko</li>
+                    </ul>
+                </p>
+                <div class="img">
+                    <img src="skille.png">
+                </div>
+                <h2 style="clear: left;"><li>SKILL ORDER</li></h2>
+                <p>
+                    <ul>
+                        <li>q->w->e myśle że oczywiste na pierwszych 3 lewelach</li>
+                        <li>Lewelowanie <span class="highlight">q do lewela 3</span> umożliwia zadawanie jakichkolwiek obrażeń, by przeciwnicy nie mogli po prostu nas ignorować</li>
+                        <li>Ult kiedy możliwe</li>
+                        <li><span class="highlight">E lewel 4</span> to nasz cel, bo lvl 5 to marnotractwo</li>
+                        <li><span class="highlight">W max</span> bo nigdy tego skilla za dużo</li>
+                        <li>Później róbta co chceta</li>
+                    </ul>
+                </p>
+                <h2><li>Dlaczego E lvl 4, a nie 5 ?</li></h2>
+                <p>
+                    Ze względu, że istnieje coś takiego jak <a href="https://leagueoflegends.fandom.com/wiki/Movement_speed#Movement_speed_caps">speed_soft_cap@lol.fandom</a> to roznica jest mniejsza niż 14 punktów procentowych.<br>
+                        Mianowicie: ulepszenie 4->5 (dla osoby, która bazowo ma 380 ms) zwieksza ms <span class="highlight">581.5->608.1</span> albo spowalnia <span style="color: var(--header-color);">138.5->111.9</span>.<br>
+                    Nie jest to moim zdaniem różnica zmieniająca cokolwiek.
+                </p>
+            </ol>
+        </main>
+    </body>
+</html>

@@ -14,11 +14,10 @@
 }
 
 .ls {
-    margin-left: 0;
-    padding-left: 0;
+    /*margin-left: 0;*/
+    /*padding-left: 0;*/
     display: flex;
-    flex-flow: row;
-    max-width: 100%;
+    /*max-width: 100%;*/
     flex-wrap: wrap;
 }
 
@@ -26,10 +25,11 @@
     flex-basis: 100%;
     position: relative;
     top: 0;
+    /*grid-column: 1/ span 4;*/
     content: "$ ls\a";
     width: 100%;
     color: var(--secondary-header-color);
-    padding: 0;
+    /*padding: 0;*/
 }
 
 .ls li {
@@ -38,15 +38,12 @@
     padding: 0.5em;
 }
 
-.ls li a {
-    margin: none;
-    padding: 0.5em 0.5em 0.5em 0.5em;
-}
 
 .feh {
     color: var(--secondary-header-color);
     width: fit-content;
     margin: 1em;
+    max-width: 100vw;
 }
 .feh::before {
     position: relative;
@@ -57,6 +54,7 @@
     padding: 0;
 }
 .feh img {
+    padding-top: 0.25em;
     max-height: 100%;
     max-width: 100%;
 }

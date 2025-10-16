@@ -1,0 +1,43 @@
+.linki {
+    display: flex;
+    background-image: url("./kula_teorii_low.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.link-col {
+    flex: 1 1 0px;
+    display: flex;
+    flex-flow: column;
+}
+.link-col * {
+    min-height: 15vh;
+    border: dashed 1px aqua;
+    flex: 1 1 0px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+}
+/*
+<section id="linki">
+    <div class="link-col">
+        <a href="teorie/PIED/">System PIED</a><br>
+    </div>
+    <div class="link-col">
+        <a href="teorie/datawaznosci/">Jak głupota spada z czasem</a><br>
+        <a href="teorie/skrzyzowanie/">Jak działa skrzyżowanie przy ZST Leżajsk</a><br>
+    </div>
+    <div class="link-col">
+        <a href="teorie/zilean/">Pro zilean build sezon 14</a><br>
+        <a href="teorie/duduizm/">Duduizm</a><br>
+        <a href="teorie/pstryki/">Pstryki</a><br>
+    </div>
+    <div class="link-col">
+        <a href="teorie/kanapki/">Kanapki</a>
+        <a href="teorie/gatekeeping-krzaka/">Prawda o krzaku</a>
+    </div>
+    <div class="link-col">
+        <a href="teorie/ciekawe-strony/">Ciekawe strony</a>
+    </div>
+</section>
+*/

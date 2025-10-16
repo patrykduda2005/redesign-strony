@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl-pl">
+    <head>
+        <title>Data ważności | Paut's</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="module" async blocking="render" fetchpriority="high">
+            const nav_promise = fetch("/nav/nav.html").then((f) => {return f.text()})
+            const nav_elem = document.getElementById("nav_anchor")
+            nav_promise.then((v) => nav_elem.innerHTML = v)
+        </script>
+        <link rel="stylesheet" href="/style/index.css" defer>
+        <link rel="stylesheet" href="/nav/nav.css" defer>
+    </head>
+    <body>
+        <noscript>
+            <a href="/nav/nav.html" style="text-align: center;">Navigacja</a>
+        </noscript>
+        <div id="nav_anchor"></div>
+        <main>
+            <p>
+            Czasami zdaża się, że ktoś zrobi coś bardzo głupiego. Można wtedy mieć reakcje typu japierdziele, ale tylko wtedy gdy poziom aktualnej głupoty jest wystarczająco wysoki.
+            </p>
+            <h2>Poziom głupoty</h2>
+            <hr>
+            <p>Można ocenić decyzję na skali głupoty.</p>
+            <ol start="0">
+                <li>Normalna</li>
+                <li>Głupia</li>
+                <li>Bardzo głupia</li>
+                <li>Głupia<sup>2</sup></li>
+                <li>Idiotyczna</li>
+                <li>Duda</li>
+                <li>Duda<sup>3</sup></li>
+                <li>Najgłupsza</li>
+            </ol>
+            <p>Liczba przy przymiotniku to poziom głupoty.</p>
+            <h2 style="text-align: center;">Wzór</h2>
+            <p>
+                <math display="block">
+                    <mrow>
+                        <mi>pag</mi>
+                        <mo>=</mo>
+                        <mi>ppg</mi>
+                        <mo>-</mo>
+                        <msup>
+                            <mrow>
+                                <mo>(</mo>
+                                <mfrac>
+                                    <mi>cod</mi>
+                                    <msup>
+                                        <mi>ppg</mi>
+                                        <mn>1.4</mn>
+                                    </msup>
+                                </mfrac>
+                                <mo>)</mo>
+                            </mrow>
+                            <mn>2</mn>
+                        </msup>
+                    </mrow>
+                </math>
+            </p>
+            <p>
+                Gdy wynik jest mniejszy od zera oznacza to, że jest to Normalna decyzja.
+            </p>
+            <p>
+                Pag - poziom aktualnej głupoty <br>
+                Ppg - poziom początkowej głupoty <br>
+                Cod - czas od decyzji (w latach) <br>
+            </p>
+        </main>
+    </body>
+</html>

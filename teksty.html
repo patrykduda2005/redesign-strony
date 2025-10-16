@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl-pl">
+    <head>
+        <title>Teksty | Paut's</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="module" async blocking="render" fetchpriority="high">
+            const nav_promise = fetch("/nav/nav.html").then((f) => {return f.text()})
+            const nav_elem = document.getElementById("nav_anchor")
+            nav_promise.then((v) => nav_elem.innerHTML = v)
+        </script>
+        <link rel="stylesheet" href="/style/index.css" defer>
+        <link rel="stylesheet" href="/nav/nav.css" defer>
+    </head>
+    <body>
+        <noscript>
+            <a href="/nav/nav.html" style="text-align: center;">Navigacja</a>
+        </noscript>
+        <div id="nav_anchor"></div>
+        <main>
+            <h1>Teksty mądrości ludzkiej (mojej głównie)</h1>
+            <div class="linki">
+                <div class="link-col">
+                    <a href="/teksty/PIED/">System PIED</a><br>
+                </div>
+                <div class="link-col">
+                    <a href="/teksty/datawaznosci/">Jak głupota spada z czasem</a><br>
+                    <a href="/teksty/skrzyzowanie/">Jak działa skrzyżowanie przy ZST Leżajsk</a><br>
+                </div>
+                <div class="link-col">
+                    <a href="/teksty/zilean/">Pro zilean build sezon 14</a><br>
+                    <a href="/teksty/duduizm/">Duduizm</a><br>
+                    <a href="/teksty/pstryki/">Pstryki</a><br>
+                </div>
+                <div class="link-col">
+                    <a href="/teksty/kanapki/">Kanapki</a>
+                    <a href="/teksty/gatekeeping-krzaka/">Prawda o krzaku</a>
+                </div>
+                <div class="link-col">
+                    <a href="/teksty/ciekawe-strony/">Ciekawe strony</a>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
