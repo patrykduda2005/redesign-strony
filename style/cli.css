@@ -1,0 +1,74 @@
+.ascii {
+    color: var(--header-color);
+    font-weight: bold;
+    white-space: pre;
+    font-family: monospace;
+    height: fit-content;
+}
+
+.ascii::before {
+    color: var(--secondary-header-color);
+    content: "$ figlet -f slant\a";
+    font-weight: normal;
+    width: 100%;
+}
+
+.ls {
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-flow: row;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.ls::before {
+    flex-basis: 100%;
+    position: relative;
+    top: 0;
+    content: "$ ls\a";
+    width: 100%;
+    color: var(--secondary-header-color);
+    padding: 0;
+}
+
+.ls li {
+    flex: 1;
+    list-style: none;
+    padding: 0.5em;
+}
+
+.ls li a {
+    margin: none;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.feh {
+    color: var(--secondary-header-color);
+    width: fit-content;
+    margin: 1em;
+}
+.feh::before {
+    position: relative;
+    top: 0;
+    content: "$ feh\a";
+    width: 100%;
+    color: var(--secondary-header-color);
+    padding: 0;
+}
+.feh img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.command {
+    color: var(--secondary-header-color);
+    font-family: monospace;
+    display: block;
+}
+
+.result {
+    display: block;
+    padding: 0.5em;
+    margin-left: 1em;
+}

@@ -1,0 +1,47 @@
+@import url("/style/cli.css");
+:root {
+    --header-color: #03a9a9;
+    --secondary-header-color: #137979;
+    --highlight-color: #afd700;
+}
+hr {
+    color: var(--secondary-header-color);
+}
+
+* {
+    background-color: #1c1c1c;
+    color: #d0d0d0;
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;
+}
+html, body {
+    background-image: url(/style/pipes.gif);
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+}
+main {
+    clear: both;
+    padding: 0.25em;
+    max-width: 100%;
+    min-height: 100%;
+}
+@media only screen and (min-width: 600px) {
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+a {
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--highlight-color);
+}
+
+h1, h2 {
+    color: var(--header-color);
+}

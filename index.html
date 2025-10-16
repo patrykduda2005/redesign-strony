@@ -2,27 +2,37 @@
 <html lang="pl-pl">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="module" async blocking="render" fetchpriority="high">
-            const nav_promise = fetch("./nav.html").then((f) => {return f.text()})
-            const nav_elem = document.getElementById("nav")
+            const nav_promise = fetch("/nav/nav.html").then((f) => {return f.text()})
+            const nav_elem = document.getElementById("nav_anchor")
             nav_promise.then((v) => nav_elem.innerHTML = v)
         </script>
-        <link rel="stylesheet" href="index.css" defer>
+        <link rel="stylesheet" href="/style/index.css" defer>
+        <link rel="stylesheet" href="/nav/nav.css" defer>
     </head>
     <body>
         <noscript>
-            <a href="./nav.html">Navigacja</a>
+            <a href="/nav/nav.html" style="text-align: center;">Navigacja</a>
         </noscript>
-        <div id="nav"></div>
+        <div id="nav_anchor"></div>
         <main>
-            <command>$ cat index.html</command>
-            <result>
+            <div class="command">$ cat index.html</div>
+            <div class="result">
+                <div class="feh" style="float: right; width: 7em;">
+                    mechanik.png
+                    <img src="/mechanik.png">
+                </div>
                 <h1>Witam</h1>
                 <p>Jestem Patrykiem Dudą, ale nie jestem w żaden sposób spokrewniony z Andrzejem Dudą.
     Na stan aktualny mam rocznikowo 20 lat</p>
                 <h1>Linki</h1>
-                <p>Mam kanał yt: <a href="https://www.youtube.com/@shakeidudi9146">Shakei Dudi</a></p>
-            </result>
+                <p>Mam kanał yt: <a href="https://www.youtube.com/@shakeidudi9146">Shakei_Dudi@youtube.com</a></p>
+                <h1>Fajne strony</h1>
+                <ul class="ls">
+                    <li><a href="https://krzakowocowy.com/">KRZAK_OWOCOWYYYY@krzakowocowy.com</a></li>
+                </ul>
+            </div>
         </main>
     </body>
 </html>
