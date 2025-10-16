@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="pl-pl">
     <head>
-        <title>Ciekawe strony | Duda's</title>
-        <link rel="stylesheet" href="../../globalstyle.css">
-        <link rel="stylesheet" href="../../stylepodstron.css">
-        <script src="../../nav/resizeIframe.js"></script>
+        <title>Ciekawe strony | Paut's</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.png">
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="module" async blocking="render" fetchpriority="high">
+            const nav_promise = fetch("/nav/nav.html").then((f) => {return f.text()})
+            const nav_elem = document.getElementById("nav_anchor")
+            nav_promise.then((v) => nav_elem.innerHTML = v)
+        </script>
+        <link rel="stylesheet" href="/style/index.css" defer>
+        <link rel="stylesheet" href="/nav/nav.css" defer>
     </head>
     <body>
-        <iframe src="../../nav/nav.html" scrolling="no"></iframe>
+        <noscript>
+            <a href="/nav/nav.html" style="text-align: center;">Navigacja</a>
+        </noscript>
+        <div id="nav_anchor"></div>
         <main>
             <p>
                 Ciekawe strony, które uważam za warte do zapisania.
             </p>
-            <ul>
+            <ul class="ls">
                 <li><a href="https://patrykduda.com">patrykduda.com</a></li>
                 <li><a href="https://krzakowocowy.com/">krzakowocowy.com</a></li>
                 <li><a href="https://rudyz.neocities.org/">rudyz.neocities.org</a></li>
-                <li>
-                    <a href="https://grugbrain.dev/">grugbrain.dev</a>
-                </li>
-                <li>
-                    <a href="https://woob.tech/">woob.tech</a>
-                </li>
+                <li><a href="https://grugbrain.dev/">grugbrain.dev</a></li>
+                <li><a href="https://woob.tech/">woob.tech</a></li>
                 <li><a href="https://ligurio.github.io/awesome-ttygames/">awesome-ttygames</a></li>
                 <li><a href="https://foreverliketh.is/">foreverliketh.is</a></li>
                 <li><a href="https://love-la.in/">love-la.in</a></li>
@@ -31,6 +36,19 @@
                 <li><a href="https://lainchan.org/">lainchan.org</a></li>
                 <li><a href="https://gg.deals/">gg.deals</a></li>
                 <li><a href="https://excalidraw.com/">excalidraw.com</a></li>
+            </ul>
+            <h2>Web ringi:</h2>
+            <ul class="ls">
+                <li><a href="https://autistbh.neocities.org/"><img src="https://autistbh.neocities.org/rainbow.gif"></a></li>
+                <li><a href="https://geekring.net/"><img src="http://geekring.net/banner/geek_2.gif" alt="The Geekring"></a></li>
+                <li><a href="https://webring.xxiivv.com/" rel="noopener">XXIIVV webring</a></li>
+                <li><a href="https://silly.city"><img src="https://silly.city/silly.gif" alt="silly.city" width="88px" height="31px"> </a></li>
+                <li><a href="https://www.cyberdragon.digital/rings/draconic/"><img src="https://www.cyberdragon.digital/rings/draconic/header.png" alt="draconic"></a></li>
+                <li><div id=voidShrooms><style>#voidShrooms{width:200px;height:50px;background:url(https://void.shroom.ink/src/img/background.webp) #171717;font-family:monospace;outline:5px double #ba4583;outline-offset:-5px;display:grid;grid-template-columns:1fr 1fr 1fr;margin:.5em}#voidShrooms a{color:#efefef;text-decoration:none;font-size:2.2em;text-align:center;align-self:center}#voidShrooms #home{font-size:1em;color:#3F0}</style><a aria-label=Previous href=https://void.shroom.ink/members/ id=previous target=_blank title=previous>←</a> <a aria-label=Home href=https://void.shroom.ink/ id=home target=_blank title=home>void.shrooms</a> <a aria-label=Next href=https://void.shroom.ink/members/ id=next target=_blank title=next>→</a></div></li>
+                <li><a href="https://town.thecozy.cat/web-revival/freespeechwebring/"><img decoding="async" src="https://i.imgur.com/7QmM7ej.gif"></a></li>
+                <li><a href="https://womenoftheinternet.neocities.org"><img src="https://womenoftheinternet.neocities.org/files/women-of-the-internet_BADGE.png" alt="women of the internet"></a></li>
+                <li><a href="https://cs.sjoy.lol/">css joy</a></li>
+                <li><a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a></li>
             </ul>
         </main>
     </body>
